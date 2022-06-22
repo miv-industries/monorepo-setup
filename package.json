@@ -1,0 +1,8 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "lambdas:dev": "pnpm --filter lambdas run dev",
+    "lambdas:start": "pnpm --filter lambdas run start"
+  }
+}
