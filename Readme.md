@@ -1,4 +1,5 @@
 # Monorepo Setup
+![image](https://user-images.githubusercontent.com/91548145/175075804-6f0c80d6-059f-4e2c-9410-39a38e14c3d0.png)
 ## Goals
 
  I am going to attempt to create a monorepo template using:
