@@ -12,7 +12,7 @@
 ## Project structure
 ```
 /
-	/apps/ for different frontend apps
+	/apps/ for different apps we might need
 	/common/ for the common stuff between apps
 	/lambdas/ serverless backend
 	/schemas/ graphql core schema
@@ -22,7 +22,7 @@ Each app will have its own package.json and local configs like .gitignore, tscon
 
 ## Issues encountered
  - [x] Had to start from scratch cuz I was dumb and copy pasted
-## Instructions 
+## Instructions (setup from 0 || 0 to hero) 
 1) If you don't have the serverless cli tool install it via `npm install -g serverless`
 2) Install pnpm if you don't have it installed already `npm install -g pnpm`  (oh the irony)
 3) `serverless create --template aws-nodejs-typescript --path lambdas ` to create a serverless project from the template just under the lambdas folder
