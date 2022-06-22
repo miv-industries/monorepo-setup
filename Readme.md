@@ -2,7 +2,8 @@
 ## Goals
 
  I am going to attempt to create a monorepo template using:
- - [x] Basic project folder structure
+ - [x] Basic project folder structure[failed and scratched everything]
+ - [ ] Attempt to generate project using the `aws-nodejs-typescript` template from the [Serverless framework](https://www.serverless.com/)
  - [ ]  [a magic thing called pnpm](https://pnpm.io/),
  - [ ]  [AWS Node.js Typescript template](https://github.com/andrenbrandao/serverless-typescript-boilerplate) for the serverless setup, 
  - [ ]  Attempt to set up [Apollo server](https://itnext.io/how-to-build-a-serverless-apollo-graphql-server-with-aws-lambda-webpack-and-typescript-64a377739208 ) in a lambda function
