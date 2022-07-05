@@ -1,0 +1,6 @@
+schema: ./common/graphql/core.graphql
+documents: "**/*.graphql"
+extensions:
+  endpoints:
+    default:
+      url: "http://localhost:3000/OFFLINE/graphql"

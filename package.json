@@ -3,6 +3,18 @@
   "private": true,
   "scripts": {
     "lambdas:dev": "pnpm --filter lambdas run dev",
-    "lambdas:start": "pnpm --filter lambdas run start"
+    "lambdas:start": "pnpm --filter lambdas run start",
+    "lambdas:test": "pnpm --filter lambdas run test",
+    "lambdas:hello": "pnpm --filter lambdas run hello",
+    "lambdas:db:start": "pnpm --filter lambdas run db:start",
+    "lambdas:db:stop": "pnpm --filter lambdas run db:stop",
+    "generate:gql": "pnpm recursive run generate:gql",
+    "generate:schema": "pnpm --filter lambdas run generate:schema",
+    "lambdas:prisma:generate": "pnpm --filter lambdas run prisma:generate",
+    "lambdas:prisma:push": "pnpm --filter lambdas run prisma:push",
+    "lambdas:prisma:studio": "pnpm --filter lambdas run prisma:studio",
+    "lambdas:todotest": "pnpm --filter lambdas run todotest",
+    "lambdas:package": "pnpm --filter lambdas run package",
+    "lambdas:delpoy": "pnpm --filter lambdas run deploy"
   }
 }

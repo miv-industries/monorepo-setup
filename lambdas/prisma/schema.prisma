@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  binaryTargets   = ["native", "rhel-openssl-1.0.x"]
+  previewFeatures = ["interactiveTransactions"]
+  //output = "../node_modules/.pnpm/@prisma+client@3.13.0_prisma@3.13.0/node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Todo {
+  id                 String  @id @default(uuid()) @db.Uuid
+  text               String
+  done               Boolean @default(false)
+}

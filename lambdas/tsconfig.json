@@ -1,22 +1,28 @@
 {
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "es5", "es6"],
     "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "removeComments": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "target": "ES2020",
-    "outDir": "lib"
+    "outDir": "lib",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*.ts", "serverless.ts"],
+  "include": ["./**/*.ts", "serverless.ts"],
   "exclude": [
     "node_modules/**/*",
     ".serverless/**/*",
     ".webpack/**/*",
     "_warmup/**/*",
-    ".vscode/**/*"
+    ".vscode/**/*",
+    "src/functions/analytics/prisma"
   ],
   "ts-node": {
     "require": ["tsconfig-paths/register"]

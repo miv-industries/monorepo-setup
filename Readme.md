@@ -6,6 +6,7 @@
  - [x] Basic project folder structure
  - [x]  [a cursed thing called pnpm](https://pnpm.io/),
  - [x]  aws-nodejs-typescript Serverless framework `--template aws-nodejs-typescript` for the serverless setup, 
+ - [ ]  Set up [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and `aws configure` it
  - [ ]  Attempt to set up [Apollo server](https://itnext.io/how-to-build-a-serverless-apollo-graphql-server-with-aws-lambda-webpack-and-typescript-64a377739208 ) in a lambda function
  - [ ] Setup [Docker](https://docs.docker.com/get-docker/) with [Docker compose](https://docs.docker.com/compose/install/compose-plugin/) & [Postgresql](https://hub.docker.com/_/postgres)
  - [ ] Set up [prisma](https://www.prisma.io/docs/getting-started/setup-prisma) for an ORM
@@ -21,8 +22,9 @@
 Each app will have its own package.json and local configs like .gitignore, tsconfig, even a README.md
 
 ## Issues encountered
- - [x] Had to start from scratch cuz I was dumb and copy pasted
-## Instructions (setup from 0 || 0 to hero) 
+ - [x] Had to start from scratch cuz I was dumb and copy pasted without thought
+ - [x] Had to scream at boss for AWS credentials
+## Instructions (setup from 0 | from 0 to hero) 
 1) If you don't have the serverless cli tool install it via `npm install -g serverless`
 2) Install pnpm if you don't have it installed already `npm install -g pnpm`  (oh the irony)
 3) `serverless create --template aws-nodejs-typescript --path lambdas ` to create a serverless project from the template just under the lambdas folder
@@ -40,3 +42,4 @@ Each app will have its own package.json and local configs like .gitignore, tscon
 ```
 5) We are now ready to hit a recursive install for all the apps in the project via `pnpm recursive install`
 6) We should now be set to go as far as pnpm and the project template are concerned
+7) (I lied) You now need to set up your [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) (yell at boss for credentials or just use your own if you have an [AWS account](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin))
